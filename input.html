@@ -5,17 +5,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- <link rel="shortcut icon" href="logo.jpg" type="image/x-icon"> -->
-        <link rel="stylesheet" href="asset/css/style.css" />
+        <!-- Theme style -->
+        <link rel="stylesheet" href="asset/css/adminlte/adminlte.min.css" />
+        <!-- summernote -->
+        <link
+            rel="stylesheet"
+            href="asset/js/summernote/summernote-bs4.min.css"
+        />
+        <!-- style pribadi -->
+        <link rel="stylesheet" href="asset/css/style.min.css" />
         <title>Judul Halaman</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container-ib">
             <div class="banner">
-                <img src="asset/img/banner.jpg" alt="" />
+                <img src="asset/img/img2.jpg" alt="banner" />
             </div>
 
             <nav>
-                <div class="navbar">
+                <div class="navbar-ib">
                     <ul>
                         <a href="index.html"><li>HOME</li></a>
                         <a href=""><li>INFORMASI</li></a>
@@ -25,41 +33,76 @@
             </nav>
             <main>
                 <div class="kiri">
-                    <h1 class="judul">Judul</h1>
+                    <h1 class="judul">INPUT DATA INFORMASI</h1>
 
-                    <p class="isi">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Itaque corporis quaerat nisi, modi rerum fugit,
-                        repellendus molestiae suscipit veniam numquam vitae
-                        earum, error sequi quae quis quam. Nostrum placeat
-                        ducimus quo sed, quae perspiciatis fugit minima dicta at
-                        labore ut dolorum odit non, quisquam, hic totam
-                        perferendis optio quod! Doloremque ipsum nobis id
-                        aliquid, eligendi fugit, maiores amet provident adipisci
-                        non odio laudantium tempora odit. Quia repellat aliquam
-                        quibusdam temporibus quas vel, ratione animi error,
-                        nihil quod consequatur totam iste dolor, voluptas minima
-                        unde ullam atque nisi obcaecati nostrum. Beatae, quae
-                        possimus neque soluta corrupti delectus assumenda eos
-                        dolorem et.
-                    </p>
+                    <form action="">
+                        <table>
+                            <tr>
+                                <td>Judul</td>
+                                <td>:</td>
+                                <td>
+                                    <input
+                                        type="text"
+                                        name="judul"
+                                        class="input-judul"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Isi</td>
+                                <td>:</td>
+                                <td>
+                                    <div>
+                                        <textarea id="summernote">
+                                            <i>Tuliskan</i> <u>Isi</u> <b>Informasi</b>
+                                        </textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
                 </div>
 
                 <div class="kanan">
                     <div class="gambar">
-                        <img src="asset/img/banner.jpg" alt="" />
+                        <img src="asset/img/img1.jpg" alt="" />
                     </div>
                 </div>
             </main>
 
             <footer>
-                <div class="runtext">
-                    <marquee
-                        >Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Repudiandae, molestias?</marquee
-                    >
+                <div class="footer">
+                    <div class="info">
+                        <div class="info-tgl">
+                            <p class="informasi">Informasi</p>
+                            <p class="tgl">Jum'at, 08 April 2023</p>
+                        </div>
+                        <div class="info-jam">
+                            <p>15:25:07</p>
+                        </div>
+                    </div>
+                    <div class="runtext">
+                        <marquee
+                            >Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Repudiandae, molestias?</marquee
+                        >
+                    </div>
                 </div>
             </footer>
         </div>
+        <!-- jQuery -->
+        <script src="asset/js/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="asset/js/bootstrap/bootstrap.bundle.min.js"></script>
+        <!-- Summernote -->
+        <script src="asset/js/summernote/summernote-bs4.min.js"></script>
+        <script>
+            $(function () {
+                // Summernote
+                $("#summernote").summernote();
+            });
+        </script>
+        <!-- pribadi -->
+        <script src="asset/js/script.min.js"></script>
     </body>
 </html>
