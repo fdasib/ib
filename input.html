@@ -26,7 +26,7 @@
                 <div class="kiri">
                     <h1 class="judul">INPUT DATA INFORMASI</h1>
 
-                    <form action="">
+                    <form action="" method="post">
                         <table>
                             <tr>
                                 <td>Judul</td>
@@ -36,6 +36,7 @@
                                         type="text"
                                         name="judul"
                                         class="input-judul"
+                                        name="judul"
                                     />
                                 </td>
                             </tr>
@@ -44,9 +45,18 @@
                                 <td>:</td>
                                 <td>
                                     <div>
-                                        <textarea id="summernote">
+                                        <textarea id="summernote" name="isi">
                                             <i>Tuliskan</i> <u>Isi</u> <b>Informasi</b>
                                         </textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="button-simpan">
+                                        <button type="submit" class="simpan">
+                                            Simpan
+                                        </button>
                                     </div>
                                 </td>
                             </tr>
