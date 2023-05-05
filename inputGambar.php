@@ -40,17 +40,15 @@ if (isset($_POST["submit"])) {
     <!-- <link rel="shortcut icon" href="logo.jpg" type="image/x-icon"> -->
     <!-- Theme style -->
     <link rel="stylesheet" href="asset/css/adminlte/adminlte.min.css" />
-    <!-- summernote -->
-    <link rel="stylesheet" href="asset/js/summernote/summernote-bs4.min.css" />
     <!-- style pribadi -->
     <link rel="stylesheet" href="asset/css/style.css" />
     <title>Input Gambar</title>
 </head>
 
-<body onload="removeSummernote();showGambar();showTime()">
+<body onload="removeSummernote();">
     <div class="container-ib">
         <div class="banner">
-            <img src="asset/img/img2.jpg" alt="banner" />
+            <img src="asset/img/banner.jpg" alt="banner" />
         </div>
 
         <section class="content">
@@ -90,19 +88,6 @@ if (isset($_POST["submit"])) {
                 </div>
             </div>
         </section>
-
-        <footer>
-            <div class="footer">
-                <div class="info">
-                    <p class="info-jam"></p>
-                    <p class="tgl"></p>
-                </div>
-                <div class="runtext">
-                    <marquee>Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Repudiandae, molestias?</marquee>
-                </div>
-            </div>
-        </footer>
     </div>
     <!-- jQuery -->
     <script src="asset/js/jquery/jquery.min.js"></script>
@@ -110,8 +95,6 @@ if (isset($_POST["submit"])) {
     <script src="asset/js/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- bs-custom-file-input -->
     <script src="asset/js/bs-custom-file-input/bs-custom-file-input.min.js"></script>
-    <!-- Summernote -->
-    <script src="asset/js/summernote/summernote-bs4.min.js"></script>
     <!-- Page specific script -->
     <script>
         $(function() {

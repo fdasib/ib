@@ -47,61 +47,48 @@ $runtext = tampil("SELECT * FROM runtext WHERE id = $id")[0];
     <!-- <link rel="shortcut icon" href="logo.jpg" type="image/x-icon"> -->
     <!-- Theme style -->
     <link rel="stylesheet" href="asset/css/adminlte/adminlte.min.css" />
-    <!-- summernote -->
-    <link rel="stylesheet" href="asset/js/summernote/summernote-bs4.min.css" />
     <!-- style pribadi -->
     <link rel="stylesheet" href="asset/css/style.css" />
     <title>Input Run Text</title>
 </head>
 
-<body onload="removeSummernote();showGambar();showTime()">
-    <div class="container-ib">
-        <div class="banner">
-            <img src="asset/img/img2.jpg" alt="banner" />
-        </div>
+<body onload="removeSummernote();
+    <div class=" container-ib">
+    <div class="banner">
+        <img src="asset/img/banner.jpg" alt="banner" />
+    </div>
 
-        <section class="content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card card-primary">
-                            <div class="card-header">
-                                <h3 class="card-title">INPUT RUN TEXT</h3>
-                            </div>
-                            <!-- /.card-header -->
-                            <!-- form start -->
-                            <form action="" method="post" enctype="multipart/form-data">
-                                <input type="hidden" name="id" value="<?= $runtext["id"]; ?>">
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="runtext">Text</label>
-                                        <input type="text" name="runtext" class="form-control" id="runtext" name="runtext" placeholder="Masukkan Run Text" value="<?= $runtext["text"]; ?>" />
-                                    </div>
-                                </div>
-                                <!-- /.card-body -->
-
-                                <div class="card-footer">
-                                    <button type="submit" name="submit" class="btn btn-primary">Simpan</button>
-                                </div>
-                            </form>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">INPUT RUN TEXT</h3>
                         </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="id" value="<?= $runtext["id"]; ?>">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="runtext">Text</label>
+                                    <input type="text" name="runtext" class="form-control" id="runtext" name="runtext" placeholder="Masukkan Run Text" value="<?= $runtext["text"]; ?>" />
+                                </div>
+                            </div>
+                            <!-- /.card-body -->
+
+                            <div class="card-footer">
+                                <button type="submit" name="submit" class="btn btn-primary">Simpan</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer>
-            <div class="footer">
-                <div class="info">
-                    <p class="info-jam"></p>
-                    <p class="tgl"></p>
-                </div>
-                <div class="runtext">
-                    <marquee>Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Repudiandae, molestias?</marquee>
-                </div>
-            </div>
-        </footer>
+
     </div>
     <!-- jQuery -->
     <script src="asset/js/jquery/jquery.min.js"></script>

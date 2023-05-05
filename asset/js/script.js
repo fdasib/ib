@@ -1,39 +1,3 @@
-// Data untuk gambar
-let gmb = [
-    {
-        no: 1,
-        text: "Koala",
-    },
-    {
-        no: 2,
-        text: "Pinggir Pantai",
-    },
-    {
-        no: 3,
-        text: "Pinguin",
-    },
-    {
-        no: 4,
-        text: "Bunga Kuning",
-    },
-    {
-        no: 5,
-        text: " Gunung Gurun",
-    },
-    {
-        no: 6,
-        text: "Bunga Oranye",
-    },
-    {
-        no: 7,
-        text: "Bunga Putih",
-    },
-    {
-        no: 8,
-        text: "Ubur-Ubur",
-    },
-];
-
 // Hapus tulisan summernote
 function removeSummernote() {
     if (document.querySelector('a[href="http://summernote.org/"]')) {

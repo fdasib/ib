@@ -1,6 +1,7 @@
 <?php
 require 'functions.php';
 $informasi = tampil("SELECT * FROM informasi");
+$gmb = tampil("SELECT gambar FROM gambar");
 
 if (!$_GET) {
     $informasi = $informasi[0];
@@ -31,10 +32,10 @@ $isi = htmlspecialchars_decode($informasi['isi']);
     <title>Judul Halaman</title>
 </head>
 
-<body onload="showTime()">
+<body onload="showTime();">
     <div class="container-ib">
         <div class="banner">
-            <img src="asset/img/img2.jpg" alt="Banner" />
+            <img src="asset/img/banner.jpg" alt="Banner" />
         </div>
         <main>
             <div class="kiri">
@@ -47,7 +48,7 @@ $isi = htmlspecialchars_decode($informasi['isi']);
 
             <div class="kanan">
                 <div class="gambar">
-                    <img src="asset/img/img1.jpg" alt="" />
+                    <img src="asset/img/<?= $gmb[0]["gambar"]; ?>" alt="" />
                     <div class="text-gmb"></div>
                 </div>
             </div>
@@ -60,8 +61,7 @@ $isi = htmlspecialchars_decode($informasi['isi']);
                     <p class="tgl"></p>
                 </div>
                 <div class="runtext">
-                    <marquee>Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Repudiandae, molestias?</marquee>
+                    <marquee></marquee>
                 </div>
             </div>
         </footer>
@@ -98,8 +98,17 @@ $isi = htmlspecialchars_decode($informasi['isi']);
 
                 // data ajax runtext
                 let runtext = data["runtext"];
+                let tampilRuntext = "";
                 // menampilkan runtext ke marquee
-                document.querySelector('.runtext marquee').innerHTML = runtext[0].text;
+                console.log(runtext.length);
+                for (let i = 0; i < runtext.length; i++) {
+                    tampilRuntext += runtext[i].text;
+                    if (i == runtext.length - 1) {
+                        break;
+                    }
+                    tampilRuntext += ` | `;
+                }
+                document.querySelector('.runtext marquee').innerHTML = tampilRuntext;
             }
         }
 

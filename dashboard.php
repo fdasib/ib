@@ -119,7 +119,7 @@ $runtext = tampil("SELECT * FROM runtext");
                                         <?php endforeach; ?>
                                     <?php else : ?>
                                         <tr>
-                                            <td colspan=" 4">
+                                            <td colspan="5">
                                                 <h2 align="center">Maaf data kosong!</h2>
                                             </td>
                                         </tr>
@@ -179,7 +179,7 @@ $runtext = tampil("SELECT * FROM runtext");
 
                                     <?php else : ?>
                                         <tr>
-                                            <td colspan="4">
+                                            <td colspan="5">
                                                 <h2 align="center">Maaf data kosong!</h2>
                                             </td>
                                         </tr>
@@ -236,7 +236,7 @@ $runtext = tampil("SELECT * FROM runtext");
                                         <?php endforeach; ?>
                                     <?php else : ?>
                                         <tr>
-                                            <td colspan="3">
+                                            <td colspan="4">
                                                 <h2 align="center">Maaf data kosong!</h2>
                                             </td>
                                         </tr>

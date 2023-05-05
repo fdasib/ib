@@ -51,13 +51,13 @@ $informasi = tampil("SELECT * FROM informasi WHERE id = $id")[0];
     <link rel="stylesheet" href="asset/js/summernote/summernote-bs4.min.css" />
     <!-- style pribadi -->
     <link rel="stylesheet" href="asset/css/style.css" />
-    <title>Judul Halaman</title>
+    <title>Ubah Informasi</title>
 </head>
 
-<body onload="removeSummernote();showGambar();showTime()">
+<body onload="removeSummernote();">
     <div class="container-ib">
         <div class="banner">
-            <img src="asset/img/img2.jpg" alt="banner" />
+            <img src="asset/img/banner.jpg" alt="banner" />
         </div>
 
         <section class="content">
@@ -96,18 +96,7 @@ $informasi = tampil("SELECT * FROM informasi WHERE id = $id")[0];
             </div>
         </section>
 
-        <footer>
-            <div class="footer">
-                <div class="info">
-                    <p class="info-jam"></p>
-                    <p class="tgl"></p>
-                </div>
-                <div class="runtext">
-                    <marquee>Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Repudiandae, molestias?</marquee>
-                </div>
-            </div>
-        </footer>
+
     </div>
     <!-- jQuery -->
     <script src="asset/js/jquery/jquery.min.js"></script>

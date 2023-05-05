@@ -47,10 +47,10 @@ if (isset($_POST["submit"])) {
     <title>Judul Halaman</title>
 </head>
 
-<body onload="removeSummernote();showGambar();showTime()">
-    <div class="container-ib">
+<body onload="removeSummernote();">
+    <div class=" container-ib">
         <div class="banner">
-            <img src="asset/img/img2.jpg" alt="banner" />
+            <img src="asset/img/banner.jpg" alt="banner" />
         </div>
 
         <section class="content">
@@ -88,18 +88,7 @@ if (isset($_POST["submit"])) {
             </div>
         </section>
 
-        <footer>
-            <div class="footer">
-                <div class="info">
-                    <p class="info-jam"></p>
-                    <p class="tgl"></p>
-                </div>
-                <div class="runtext">
-                    <marquee>Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Repudiandae, molestias?</marquee>
-                </div>
-            </div>
-        </footer>
+
     </div>
     <!-- jQuery -->
     <script src="asset/js/jquery/jquery.min.js"></script>
